@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Walls
+  - Keys
+  - Enemies
+  - Gem
   layers:
   - Default
   - TransparentFX
