@@ -5005,7 +5005,7 @@ GameObject:
   - component: {fileID: 475628172}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Walls
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5629,11 +5629,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078507026343995669, guid: d60e6533013db684e9235531a2328a6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.21
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 6078507026343995669, guid: d60e6533013db684e9235531a2328a6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.04
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 6078507026343995669, guid: d60e6533013db684e9235531a2328a6f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19067,7 +19067,7 @@ GameObject:
   - component: {fileID: 1828044463}
   m_Layer: 0
   m_Name: Gem
-  m_TagString: Untagged
+  m_TagString: Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19343,7 +19343,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!212 &1828044465
 SpriteRenderer:
   m_ObjectHideFlags: 0

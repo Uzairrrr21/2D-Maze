@@ -38,18 +38,21 @@ public class Player: MonoBehaviour
             transform.Translate(0, -speed * Time.deltaTime, 0);
         }
 
-        if (keys==3)
-        {
-            Destroy(door);
-        }
+        // if (keys==3)
+        // {
+        //     Destroy(collision.gameObject(door));
+        // }
     }
    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag== "Keys")
         {
+            collision.gameObject.GetComponent<Collider2D>().enabled = false;
+
             keys++;
             keyAmount.text = "Keys: " + keys;
+            
             Destroy(collision.gameObject);
         }
         if(collision.gameObject.tag== "Gem")
@@ -60,6 +63,11 @@ public class Player: MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);  
             //Debug.Log("Enemy Hit");
+        }
+         if (collision.gameObject.CompareTag("Door") && keys >= 3)
+        {
+            Destroy(collision.gameObject); // Destroy the door upon collision
+            Debug.Log("Door destroyed!");
         }
         if(collision.gameObject.tag== "Walls")
         {

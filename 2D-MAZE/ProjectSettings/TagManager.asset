@@ -8,6 +8,7 @@ TagManager:
   - Keys
   - Enemies
   - Gem
+  - Door
   layers:
   - Default
   - TransparentFX
